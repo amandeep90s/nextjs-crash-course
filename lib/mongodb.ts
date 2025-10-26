@@ -38,9 +38,7 @@ async function connectDB(): Promise<typeof mongoose> {
   if (!cached.promise) {
     // Validate the MongoDB URI exists
     if (!MONGODB_URI) {
-      throw new Error(
-        'Please define the MONGODB_URI environment variable inside .env.local'
-      );
+      throw new Error('Please define the MONGODB_URI environment variable inside .env.local');
     }
 
     const options = {

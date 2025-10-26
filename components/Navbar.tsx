@@ -6,12 +6,7 @@ export const Navbar = () => {
     <header>
       <nav>
         <Link href='/' className='logo'>
-          <Image
-            src='/icons/logo.png'
-            alt='NextJs Crash Course'
-            width={24}
-            height={24}
-          />
+          <Image src='/icons/logo.png' alt='NextJs Crash Course' width={24} height={24} />
           <p>DevEvent</p>
         </Link>
 
